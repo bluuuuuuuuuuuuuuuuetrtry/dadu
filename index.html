@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dado de 20 Lados</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #f0f0f0;
+        }
+
+        #resultado {
+            font-size: 80px;
+            font-weight: bold;
+            margin: 30px;
+            color: #333;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 12px 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Dado de 20 Lados (D20)</h1>
+
+    <div id="resultado">?</div>
+
+    <button onclick="rolarDado()">Rolar D20</button>
+
+    <script>
+        function rolarDado() {
+            const numero = Math.floor(Math.random() * 20) + 1;
+            document.getElementById("resultado").textContent = numero;
+        }
+    </script>
+
+</body>
+</html>
